@@ -1,0 +1,46 @@
+  {
+    "setup-files": [],
+    "rules":[
+    { "rule": "any-commit-message-contains",
+      "contents": "Start of a story",
+      "ignore-case": true,
+      "alternative-title":"A commit was made with the message 'Start of the story'",
+      "score-if-correct":15
+      },
+     {
+      "rule": "commit-with-message-has-tag",
+      "tag": "First story",
+      "contents": "Random story lines",
+      "ignore-case": true,
+      "score-if-correct": 5,
+      "alternative-title": "A tag was made called 'First story'."
+    },
+    {
+      "rule": "ignored",
+      "path": "files/any.xml",
+      "alternative-title": "Git ignores all unnecessary chapters in ''files",
+      "score-if-correct": 15
+    },
+    { "rule": "any-commit-message-contains",
+      "contents": "Ignore unnecessary chapters",
+      "ignore-case": true,
+      "alternative-title":"A commit was made with the message 'Ignore unnecessary chapters'",
+      "score-if-correct":15
+      },
+    { "rule": "any-commit-message-contains",
+      "contents": "Bad story lines",
+      "ignore-case": true,
+      "alternative-title":"A commit was made with the message 'Bad story lines'",
+      "score-if-correct":15
+      },
+    {
+      "rule": "commit-with-message-has-tag",
+      "tag": "Second story",
+      "contents": "Bad story lines",
+      "ignore-case": true,
+      "score-if-correct": 5,
+      "alternative-title": "A tag was made called 'First story'."
+    }
+    
+    ]
+  }
